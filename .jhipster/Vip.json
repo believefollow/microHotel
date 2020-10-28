@@ -1,0 +1,39 @@
+{
+  "name": "Vip",
+  "fields": [
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "actived",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "signInDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "vip",
+      "relationshipName": "customer",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20201028090141",
+  "entityTableName": "vip",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "microHotel",
+  "applications": "*",
+  "microserviceName": "microHotel"
+}
